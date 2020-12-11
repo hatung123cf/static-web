@@ -1,75 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thiên Nhiên</title>
-    <link rel="StyleSheet" href="./css/style.css">
-    <link rel="shortcut icon" type="image/jpg" href="./img/49612228.jpg"/>
-    <script src=""></script>
-
+	<title>Thắng cảnh Việt Nam</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="shortcut icon" type="img/png" href="./img/49612228.jpg">
+	<link rel="" type="text/js" href="./js/main.js">
 </head>
-
 <body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
-                </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
-        </ul>
-    </nav>
+	<br>
 
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
+	<button onclick="tu_dong()" id="myBtn" title="Go to top">⇧⇧</button>
+	<script>
+		function dang_nhap(){
+	    alert("Bạn muốn chuyển sang trang đăng nhập?")
+	}
+	//Nhập nút
+	  var mybutton = document.getElementById("myBtn");
+	  // Khi người dùng cuộn xuống 30px từ đầu tài liệu, hãy hiển thị nút
+	  window.onscroll = function() {scrollFunction()};
+	  function scrollFunction() {
+	    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+	      mybutton.style.display = "block";
+	    } else {
+	      mybutton.style.display = "none";
+	    }
+	  }
+	  // Khi người dùng nhấp vào nút, cuộn lên đầu tài liệu
+	  function tu_dong() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	  }
+	</script>
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
 
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto" style="margin-bottom: 16px;">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Trang chủ</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Điểm đến</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Kinh nghiệm</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Hành trình</a>
+	      </li>
+	      <li class="nav-item justify-content-end">
+	        <a class="nav-link" href="#" onclick="dang_nhap()" value="#">Đăng nhập</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Nhập nội dung cần tìm" aria-label="Search">
+	      <button class="btn btn-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+	    </form>
+	  </div>
+	</nav>
+<!-- 3.Bài viêt -->
+<div class="container">
+	<!-- viết tiêu đề vào thẻ dưới -->
+	<marquee>HàThanhTùng-1821050082-Giới thiệu danh lam, thắng cảnh Việt Nam</marquee>
+	<h1>Top 10 địa điểm du lịch Việt Nam đẹp nhất được ưa thích </h1>
+	<!--  -->
+	<div class="row">
+		<div class="col-2">
+		<!-- bài viết liên quan -->
+		<div class="noi-bat">
+				<center><h4>Bài viết liên quan</h4></center>
+			</div>
+			<div class="tin">
+				<a href="#">
+					<div><img class="pic-2" src="./img/lienquan1.jpeg"></div>
+					<div><h7>ĐÀ LẠT THÀNH PHỐ MÙ SƯƠNG, KINH NGHIỆM DU LỊCH CHI TIẾT CHO CÁC BẠN TỪ HÀ NỘI</h7></div>
+				</a>
+			</div>
 
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
+			<div class="tin">
+				<a href="#">
+					<div><img class="pic-2" src="./img/lienquan2.jpeg"></div>
+					<div><h7>QUY NHƠN ( CÙ LAO XANH- KÌ CO EO GIÓ TRUNG LƯƠNG- THÁP ĐÔI)</h7></div>
+				</a>
+			</div>
 
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
+			<div class="tin">
+				<a href="#">
+					<div><img class="pic-2" src="./img/lienquan3.jpg"></div>
+					<div><h7>REVIEW QUY NHƠN 4N3Đ</h7></div>
+				</a>
+			</div>
 
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
-
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
-
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
-
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
+			<div class="tin">
+				<a href="#">
+					<div><img class="pic-2" src="./img/lienquan4.jpeg"></div>
+					<div><h7>REVIEW TỰ TÚC ĐI KỲ CO, EO GIÓ</h7></div>
+				</a>
+			</div>
+	</div>
+		<div class="col-6">
+			<!-- viết nội dung vào thẻ dưới -->
+			<p><h2>Thác Bản Giốc</h2><br>
+				Vốn là một trong những thác nước đẹp nhất Việt Nam. Thác Bản Giốc hùng vĩ nằm giữa biên giới Việt Nam và Trung Quốc được tạo nên bởi sự tuôn chảy liên tục của dòng sông Quy Xuân hiền hoà.<br>
+			<img class="img-fluid w-100" src="./img/1.jpg"><br>
+			<img class="img-fluid w-100" src="./img/2.jpg"><br>
+			<img class="img-fluid w-100" src="./img/3.jpg"><br>
+			Thác được được chia làm hai phần, thác chính và thác phụ trông tựa như một bức tranh thiên nhiên tuyệt đẹp. Đến đây du khách không chỉ choáng ngợp say đắm trước sự hùng vĩ bao la của thiên nhiên mà còn bất ngờ trước sự hiếu khách của người dân bản địa. Có thể nói, Thác Bản Giốc thực sự là một điểm đến hấp dẫn của du lịch Việt Nam cho kì nghỉ trọn vẹn bên gia đình và người thân của bạn.<br>
+			<h2>Hang Sơn Đoòng</h2><br>
+			<img class="img-fluid w-100" src="./img/4.jpg"><br>
+			<img class="img-fluid w-100" src="./img/5.jpg"><br>
+			Hang Sơn Đoòng thuộc quần thể hang động Phong Nha - Kẻ Bàng, tọa lạc tại xã Sơn Trạch, huyện Bố Trạch, tỉnh Quảng Bình nước ta. Theo kinh nghiệm du lịch Việt Nam, hang Sơn Đoòng không chỉ nổi tiếng về kích thước khổng lồ mà còn được biết tới bởi sự đa dạng trong cảnh quan sinh vật. Nó có cả một hệ sinh thái riêng bên trong với sông và rừng. Cho tới nay, đây luôn được coi là hang động tự nhiên lớn nhất thế giới từng được phát hiện cho đến nay.<br>
+			<img class="img-fluid w-100" src="./img/6.jpg"><br>
+			<img class="img-fluid w-100" src="./img/7.jpg"><br>
+			Trong hang Sơn Đoòng, các nhà thám hiểm còn phát hiện và bất ngờ với cả một cánh rừng nguyên sinh với thảm thực vật phong phú, chưa hề có dấu vết con người. Các chuyên gia thậm chí đã gọi khu rừng trong hang này là “vườn địa đàng” nhằm tôn vinh vẻ đẹp tuyệt mĩ của hang này.<br>
+			<h2>Sa Pa</h2><br>
+			Là vùng đất luôn ẩn chứa biết bao điều kì diệu của cảnh sắc thiên nhiên và nhiều điều huyền diệu về con người. Thị trấn miền núi của tỉnh Lào Cai thu hút những du khách thích tận hưởng không khí trong lành, ngắm thác nước, ruộng bậc thang, khám phá rừng tre và đi bộ leo núi vào mỗi năm.<br>
+			<img class="img-fluid w-100" src="./img/8.jpg"><br>
+			<img class="img-fluid w-100" src="./img/9.jpg"><br>
+			Khung cảnh núi rừng với trăm hoa đua nở, “mây ôm ấp núi, núi ôm mây” chắc chắn sẽ làm nức lòng khách du lịch Việt Nam một khi đã đặt chân đến nơi này.<br>
+			<h2>Ghềnh đá dĩa</h2><br>
+			<img class="img-fluid w-100" src="./img/10.jpg"><br>
+			Tại Phú Yên, gành đá dĩa hay còn được biết đến là ghềnh đá dĩa. Vốn dĩ có tên gọi đó là do kết cấu địa chất đặc biệt gồm muôn vàn các hòn đá với đủ loại hình lăng trụ được xếp chồng lên nhau một cách ngay ngắn tựa như có bàn tay của vị thần nào đó sắp đặt, mang đến món quà vô giá cho mảnh đất Phú Yên nói riêng và du lịch Việt Nam nói chung. Bãi đá tại đây thuộc loại đá bazan có màu đen huyền và vàng sáng trải rộng ra biển, nên nhiều người nhìn từ xa còn gọi đây là tổ ông thiên tạo khổng lồ<br>
+			<h2>Cáp treo Vinpearl Nha Trang</h2><br>
+			<img class="img-fluid w-100" src="./img/11.jpg"><br>
+			Tuyến cáp treo trên biển kết nối thành phố Nha Trang với đảo Hòn Tre được coi là một điểm nhấn độc đáo của thành phố biển Nha Trang. Với chiều dài tuyến cáp treo vượt biển dài nhất thế giới và chứa được nhiều người nhất trong 1 cabin (khoảng 8 người), công trình vĩ đại này đã trở thành niềm tự hào của người dân địa phương<br>
+			<h2>Đảo Phú Quốc</h2><br>
+			<img class="img-fluid w-100" src="./img/12.jpg"><br>
+			Tờ nhật báo hàng đầu nước Ý La Repubblica đã dành nhiều ca từ ngợi khen: "Phú Quốc là thiên đường nhỏ với bãi cát trắng phau chạy dài ôm làn nước biển xanh biếc." . Hành trình du lịch Việt Nam không thể không kể đến đảo ngọc Phú Quốc.<br>
+			<h2>Vườn quốc gia Phong Nha-Kẻ Bàng</h2><br>
+			Phong Nha – Kẻ Bàng được ví như một bảo tàng địa chất khổng lồ có giá trị và mang ý nghĩa toàn cầu của ngành du lịch Việt Nam. Nơi đây, chứa đựng lịch sử phát triển địa chất phức tạp bởi tập hợp rất nhiều loại đá khác nhau, có từ 400 triệu năm trước của trái đất. Trải qua các giai đoạn kiến tạo quan trọng và các pha chuyển động đứt gãy, phối tảng, uốn nếp đã tạo ra các dãy núi trùng điệp và các bồn trầm tích bị sụt lún. <br>
+			<img class="img-fluid w-100" src="./img/13.jpg"><br>
+			Có thể nói, chính những biến động trên đã góp phần tạo nên sự đa dạng về địa chất, địa hình cũng như địa mạo của khu bảo tồn này<br>
+			<h2>Hội An</h2><br>
+			<img class="img-fluid w-100" src="./img/14.jpg"><br>
+			Tựa như một bức tranh mộc mạc, giản dị và nên thơ, dù là ngày hay đêm, Hội An vẫn mang trong mình những vẻ đẹp lôi cuốn khác nhau khiến cho khu phố cổ này luôn là một điểm nhấn trong ngành du lịch Việt Nam và được UNESCO công nhận là di sản thế giới.<br>
+			<h2>Cao nguyên đá Đồng Văn</h2><br>
+			<img class="img-fluid w-100" src="./img/15.jpg"><br>
+			Được UNESCO công nhận là công viên điạ chất toàn cầu, Cao nguyên đá Đồng Văn, tỉnh Hà Giang, nằm ở cực Bắc của Việt Nam, nơi địa đầu Tổ Quốc đã gây ấn tượng với các đỉnh núi đá vôi trên thung lũng xanh mướt nơi có nhiều thắng cảnh thiên nhiên tươi đẹp với những núi đá hiểm trở và hùng vĩ<br>
+			<h2>Tràng An</h2><br>
+			<img class="img-fluid w-100" src="./img/16.jpg"><br>
+			Là khu du lịch đẹp nhất Ninh Bình. Ngoài các hang động kỳ ảo, huyền bí, quần thể danh thắng Tràng An còn được xem là điểm thu hút của du lịch Việt Nam với hệ thống sông và hang động tuyệt đẹp, những ngôi làng nhỏ, cánh đồng lúa, các công trình đền chùa và rừng khác nhau.<br>
+		  </p>
+		</div>
+		<div class="col-4">
+		<h4>Cảnh thác nước</h4>
+		<a href="#"><img class ="img-fluid w-100" src="./img/giphy.webp">
+		</a>
+		</div>
+	</div>
+</div>
+<footer>
+	<br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<h5>Được làm bởi</h5>
+				 <p>Hà Thanh Tùng<br>
+					Mssv:1821050082<br>
+					Nhóm:91<br>	
+				</p>	
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
-
 </html>
