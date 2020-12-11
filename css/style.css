@@ -9,18 +9,14 @@ body {
     text-align: left;
     background-color: #fff;
 }
-.navbar {
-    background-color: #b2b2b2;
-    margin-bottom: 20px;
-}
-@media (min-width: 992px) {
-.navbar-expand-lg {
--ms-flex-flow: row nowrap;
-flex-flow: row nowrap;
+@media (min-width: 992px){
+.lg {
+-ms-flex-flow: bai nowrap;
+flex-flow: bai nowrap;
 -ms-flex-pack: start;
 justify-content: flex-start;
 }
-.navbar {
+.navba {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -31,18 +27,20 @@ justify-content: flex-start;
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    background-color: #b2b2b2;
+    margin-bottom: 20px;
 }
-.navbar-light .navbar-toggler {
+.light .toggler {
     color: rgba(0, 0, 0, 0.5);
     border-color: rgba(0, 0, 0, 0.1);
 }
-    .navbar-expand-lg .navbar-toggler {
+    .lg .toggler {
         display: none;
     }
     button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
         cursor: pointer;
     }
-    .navbar-toggler {
+    .toggler {
         padding: 0.25rem 0.75rem;
         font-size: 1.25rem;
         line-height: 1;
@@ -50,7 +48,7 @@ justify-content: flex-start;
         border: 1px solid transparent;
         border-radius: 0.25rem;
     }
-    .navbar-expand-lg .navbar-collapse {
+    .lg .coll {
         display: -ms-flexbox !important;
         display: flex !important;
         -ms-flex-preferred-size: auto;
@@ -59,35 +57,26 @@ justify-content: flex-start;
     .collapse:not(.show) {
         display: none;
     }
-    .navbar-collapse {
+    .coll {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         -ms-flex-positive: 1;
-        flex-grow: 1;
         -ms-flex-align: center;
         align-items: center;
     }
-    .navbar-collapse {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        -ms-flex-align: center;
-        align-items: center;
+    .lg .na {
+        -ms-flex-direction: bai;
+        flex-direction: bai;
     }
-    .navbar-expand-lg .navbar-nav {
-        -ms-flex-direction: row;
-        flex-direction: row;
-    }
-    .mr-auto, .mx-auto {
+    .mr-auto .mx-auto {
         margin-right: auto !important;
     }
-    .navbar-nav {
+    .na {
         display: flex;
         margin-bottom: 0;
         list-style: none;
     }
-    .nav-item {
+    .item {
         margin-right: 20px;
        
     }
@@ -107,19 +96,19 @@ justify-content: flex-start;
         display: list-item;
         text-align: -webkit-match-parent;
     }
-    .navbar-light .navbar-nav .nav-link {
+    .light .na .link {
         color: rgba(0, 0, 0, 0.5);
     }
-    .navbar-expand-lg .navbar-nav .nav-link {
+    .lg .na .link {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
     
-    .navbar-nav .nav-link {
+    .na .link {
         padding-right: 0;
         padding-left: 0;
     }
-    .nav-link {
+    .link {
         color: black;
         font-weight: 1000;
         display: block;
@@ -131,35 +120,35 @@ justify-content: flex-start;
         text-decoration: none;
         background-color: transparent;
     }
-    .navbar-nav a {
+    .na a {
         display: inline-block;
         padding: 10px;
         font-size: 19px;
         color: white;
         text-decoration: none;
     }
-    .navbar-nav a:hover{
+    .na a:hover{
         background-color: grey;
         padding: 14px;
       }
-    .justify-content-end {
+    .end {
         -ms-flex-pack: end !important;
         justify-content: flex-end !important;
     }
-    .form-inline {
+    .inli {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+        -ms-flex-flow: bai wrap;
+        flex-flow: bai wrap;
         -ms-flex-align: center;
         align-items: center;
     }
-    .form-inline .form-control {
+    .inli .control {
         display: inline-block;
         width: auto;
         vertical-align: middle;
     }
-    .form-control {
+    .control {
         display: block;
         width: 100%;
         height: calc(1.5em + 0.75rem + 2px);
@@ -209,7 +198,7 @@ justify-content: flex-start;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.row {
+.bai {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -217,7 +206,7 @@ justify-content: flex-start;
     margin-right: -15px;
     margin-left: -15px;
 }
-.col-2 {
+.cot1 {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
@@ -226,7 +215,7 @@ justify-content: flex-start;
     padding-right: 15px;
     padding-left: 15px;
 }
-.col-6 {
+.cot3 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
@@ -235,7 +224,7 @@ justify-content: flex-start;
     padding-right: 15px;
     padding-left: 15px;
 }
-.col-4 {
+.cot2 {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
@@ -273,31 +262,14 @@ justify-content: flex-start;
     max-width: 100%;
     height: auto;
 }
-.form-control .btn{
+.control .btn{
 	font-size: 15px;
 }
-.nav-link{
-	color: black;
-	font-weight: 1000;
-}
-.pic-1{
-	max-width: 100%;
-  	height: 400px;
-}
-.pic-2{
+.pic{
 	max-width:100%;
 	height: 180px;
 }
-.pic-3{
-	max-width:100%;
-	height: 100px;
-}
-.pic-4{
-	float: left;
-	width: 70px;
-	height: 70px;
-}
-.nav-link:hover{
+.link:hover{
     display: block;
 }    
 /*css js*/
